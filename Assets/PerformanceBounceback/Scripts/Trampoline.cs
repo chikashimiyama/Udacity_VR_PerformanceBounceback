@@ -7,11 +7,6 @@ public class Trampoline : MonoBehaviour {
     public ParticleSystem pSystem;
     public GameManager scoreScript;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
 	// Update is called once per frame
 	void Update () {
         scoreScript = GameObject.Find("GameManager").GetComponent<GameManager>();
