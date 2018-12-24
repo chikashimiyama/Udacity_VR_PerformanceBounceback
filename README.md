@@ -1,6 +1,4 @@
-\#Udacity VR Performance Bounceback
-
- 
+#Udacity VR Performance Bounceback 
 
 by Chikashi Miyama
 
