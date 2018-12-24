@@ -1,7 +1,13 @@
-# Udacity_VR_PerformanceBounceback
+\#Udacity VR Performance Bounceback
+
+ 
 
 by Chikashi Miyama
 
-- How long it took to complete the project: 3 days
-- one thing you liked: Optimization drastically changes the response of the app.
-- one thing that was challenging about this project: light probe.
+ 
+
+-   time spent for the project : 3 days
+
+-   the point I liked: profiler
+
+-   challenge for me: Light probe
