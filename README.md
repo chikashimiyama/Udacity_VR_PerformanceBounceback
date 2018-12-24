@@ -7,4 +7,5 @@ by Chikashi Miyama
 
 -   the point I liked: profiler
 
--   challenge for me: Light probe
+-   challenging point: buffer pool. I do understand the problems of instantiation but if I cache even 1000 balls, it can easily reach 1000 counts. the ball has to be destroyed/disabled if it reaches the boundary for example.
+
