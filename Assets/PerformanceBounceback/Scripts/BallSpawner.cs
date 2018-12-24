@@ -2,17 +2,14 @@
 
 public class BallSpawner : MonoBehaviour
 {
-    public GameObject pooledBall; //the prefab of the object in the object pool
+    public GameObject pooledBall; 
     
-    private const int BallsAmount = 1000; 
+    private const int BallsAmount = 1000; // large enough to replace instantiation
     private GameObject[] pooledBalls_;
     private static int _poolIndex = -1; 
 
-    
     private float cooldown_;
     private const float CooldownLength = 0.5f;
-
-
 
     private void Start()
     {
