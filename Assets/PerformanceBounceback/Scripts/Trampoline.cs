@@ -1,30 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Trampoline : MonoBehaviour {
 
-    public ParticleSystem pSystem;
-    public GameManager scoreScript;
+    private ParticleSystem pSystem_;
+    private GameManager scoreScript_;
 
-	// Update is called once per frame
-	void Update () {
-        scoreScript = GameObject.Find("GameManager").GetComponent<GameManager>();
-        pSystem = GetComponentInChildren<ParticleSystem>();
-
-	}
-
-    void OnCollisionEnter(Collision col)
+    private void Start()
     {
-        if (col.gameObject.CompareTag("Throwable"))
-        {
-            //Score Point
-            scoreScript.score++;
-            //Particle effect
-            pSystem.Play();
+        scoreScript_ = GameObject.Find("GameManager").GetComponent<GameManager>();
+        pSystem_ = GetComponentInChildren<ParticleSystem>();
+    }
 
-            Debug.Log("Trampoline Hit");
-        }
+    private void OnCollisionEnter(Collision col)
+    {
+        if (!col.gameObject.CompareTag("Throwable")) return;
+        
+        scoreScript_.score++;
+        pSystem_.Play();
 
     }
 }

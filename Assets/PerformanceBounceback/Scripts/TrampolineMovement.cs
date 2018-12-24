@@ -1,22 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TrampolineMovement : MonoBehaviour {
 
-    public Vector3 direction = new Vector3(1,0,0);
-    public float moveSpeed = 3.5f;
-    public float moveTime = 3f;
-    private float time;
-	
-	// Update is called once per frame
-	void Update () {
-        time += Time.deltaTime;
-        if(time > moveTime)
+	private Vector3 direction_ = new Vector3(1,0,0);
+	private readonly float moveSpeed_ = 3.5f;
+	private readonly float moveTime_ = 3f;
+    private float time_;
+
+	private void Update () {
+        time_ += Time.deltaTime;
+        if(time_ > moveTime_)
         {
-            time = 0;
-            direction = direction * -1;
+            time_ = 0;
+            direction_ = direction_ * -1;
         }
-        transform.position += direction * Time.deltaTime * moveSpeed;		
+        transform.position += direction_ * Time.deltaTime * moveSpeed_;		
 	}
 }
