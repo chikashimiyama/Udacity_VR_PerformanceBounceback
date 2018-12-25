@@ -1,10 +1,20 @@
-#Udacity VR Performance Bounceback 
+Udacity VR Performance Bounceback 
+----------------------------------
 
 by Chikashi Miyama
 
  
+
+![](screenshot.png)
+
+-   with new Steam SDK
+
+-   tested with Oculus Rift
+
+-   Unity version. 2017.4.15f
+
 -   time spent for the project : 2 days
 
 -   the point I liked: profiler
 
--   challenge for me: Light probe
+-   challenge for me: caching
