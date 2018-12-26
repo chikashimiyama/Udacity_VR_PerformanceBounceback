@@ -15,7 +15,7 @@ public class Trampoline : MonoBehaviour {
     {
         if (!col.gameObject.CompareTag("Throwable")) return;
         
-        scoreScript_.score++;
+        scoreScript_.score++; // invokes event
         pSystem_.Play();
 
     }

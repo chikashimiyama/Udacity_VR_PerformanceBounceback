@@ -15,6 +15,8 @@ by Chikashi Miyama
 
 -   time spent for the project : 2 days
 
--   the point I liked: profiler
+-   the point I liked: profiler and light probes
 
 -   challenge for me: caching
+
+ 

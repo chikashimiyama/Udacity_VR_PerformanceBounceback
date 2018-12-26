@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
@@ -11,9 +9,10 @@ public class Score : MonoBehaviour {
 	private void Start () {
         gameManager_ = GameObject.Find("GameManager").GetComponent<GameManager>();
 		text_ = GetComponentInChildren<Text>();
+		gameManager_.ScoreUpdated += OnScoreUpdated;
 	}
 
-	private void Update () {
-        text_.text = "Score: " + gameManager_.score.ToString();
+	private void OnScoreUpdated (int newScore) {
+        text_.text = "Score: " + newScore;
 	}
 }
